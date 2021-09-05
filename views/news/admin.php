@@ -26,7 +26,12 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'id',
             'title',
             'desc',
-            'content:ntext',
+            [
+                'attribute' =>'content',
+                'contentOptions' => [
+                    'style' => 'font-size:12px;',
+                ]
+            ],
             [
                 'format' => 'boolean',
                 'attribute' => 'elect',

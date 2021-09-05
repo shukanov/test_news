@@ -72,16 +72,14 @@ class NewsController extends Controller
     {
         $dataProvider = new ActiveDataProvider([
             'query' => News::find(),
-            /*
             'pagination' => [
-                'pageSize' => 50
+                'pageSize' => 5
             ],
             'sort' => [
                 'defaultOrder' => [
                     'id' => SORT_DESC,
                 ]
             ],
-            */
         ]);
 
         return $this->render('admin', [
